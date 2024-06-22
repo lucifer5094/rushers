@@ -5,6 +5,10 @@
    
 }
 
+body{
+    background-color: #d3e48b;
+}
+
 @media (max-width: 600px) {
     .contact-btn {
         padding: 12px 20px;
@@ -198,4 +202,8 @@
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+.footer{
+    color: red;
 }
