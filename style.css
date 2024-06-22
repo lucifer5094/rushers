@@ -125,11 +125,10 @@
         margin: 0;
     }
 
-.contact-buttons {
+..contact-buttons {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    position: relative;
 }
 
 .contact-btn {
@@ -169,7 +168,7 @@
     animation-delay: 1s;
 }
 
-.instagram-btn{
+.instagram-btn {
     background-color: #e1306c;
     animation-delay: 1.2s;
 }
