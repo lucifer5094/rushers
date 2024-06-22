@@ -5,6 +5,18 @@
    
 }
 
+@media (max-width: 600px) {
+    .contact-btn {
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact-btn {
+        padding: 10px 15px;
+    }
+}
+
 .name {
     margin: 0%;
     padding: 0%;
@@ -125,8 +137,7 @@
         margin: 0;
     }
 
-..contact-buttons {
-    display: flex;
+.contact-buttons {
     flex-direction: column;
     gap: 10px;
 }
