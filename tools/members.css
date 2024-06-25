@@ -209,7 +209,8 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 tr:hover {
-  background-color: #ddd;
+  
+  background-color: #a5a5a5;
 }
 @keyframes fadeIn {
   from {
@@ -242,3 +243,4 @@ tr:hover {
     opacity: 1;
   }
 }
+
