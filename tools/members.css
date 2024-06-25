@@ -5,11 +5,18 @@
 }
 
 body {
+  height: max-content;
+  width: max-content;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
   background-color: #f3f30b;
   color: #000000;
+}
+
+@media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
 }
 
 @media (max-width: 600px) {
