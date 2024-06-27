@@ -6,16 +6,16 @@
 }
 
 body{
-    
-    margin: 0;
-    padding: 0;
+
+    height: max-content;
+    width: max-content;
+    margin: auto;
+    padding: auto;
     font-family: 'Roboto', sans-serif;
     background-color: #f3f30b;
     color: #000000;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
 }
 
 @media (max-width: 600px) {
@@ -135,7 +135,6 @@ nav ul li a:hover::after {
 }
 
 
-
             /* contact */
 
 .contact-section{
@@ -214,4 +213,51 @@ nav ul li a:hover::after {
 
 .footer{
     color: red;
+}
+
+/*    clan details   */
+
+.clan-details{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s;
+}
+
+.clan-details h2 {
+    margin-top: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
