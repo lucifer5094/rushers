@@ -96,79 +96,42 @@ body{
 /*     menu buttons    */
 
 .container {
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: auto;
-    width: auto;
-    background-color: #2b2b24;
-    animation: fadeIn 2s ease-in-out;
+    padding: 0;
 }
 
-.home, .member, .war, .attacker, .contact{
-    font-size: 16px;
-    color: rgb(12, 12, 173);
-    background-color: #bbb6b6;
-    padding: 10px 20px;
-    margin: 5px 0;
-    border-radius: 5px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    cursor: pointer;
+nav ul li {
+    margin: 0 1rem;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
 }
 
-.home, .member, .war, .attacker, .contact {
-    font-size: auto;
-    color: rgb(12, 12, 173);
-    background-color: #bbb6b6;
-    padding: 10px 20px;
-    margin: 5px 0;
-    border-radius: 5px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    cursor: pointer;
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
 }
 
-.home:hover, .member:hover, .war:hover, .attacker:hover, .contact:hover {
-    transform: scale(1.1);
-    background-color: #a5a5a5;
-}
-
-.home:active, .member:active, .war:active, .attacker:active, .contact:active {
-    transform: scale(0.9);
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-.home {
-    animation: slideIn 1s ease;
-}
-.member {
-    animation: slideIn 1.2s ease;
-}
-.war {
-    animation: slideIn 1.4s ease;
-}
-.attacker {
-    animation: slideIn 1.6s ease;
-}
-.contact {
-    animation: slideIn 1.8s ease;
+nav ul li a:hover::after {
+    width: 100%;
 }
 
 
