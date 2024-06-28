@@ -110,23 +110,44 @@ body {
 /*     menu buttons    */
 
 .container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  width: auto;
-  background-color: #2b2b24;
-  animation: fadeInn 2s ease-in-out;
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+    color: #fff;
+    padding: 1rem 0;
 }
 
-@keyframes fadeInn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
+
+nav ul li{
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+nav ul li a::hover::after {
+  width: 100%;
+}
+
 
 .home,
 .member,
@@ -134,8 +155,6 @@ body {
 .attacker,
 .contact {
   font-size: auto;
-  color: rgb(12, 12, 173);
-  background-color: #bbb6b6;
   padding: 10px 20px;
   margin: 5px 0;
   border-radius: 5px;
@@ -149,7 +168,6 @@ body {
 .attacker:hover,
 .contact:hover {
   transform: scale(1.1);
-  background-color: #a5a5a5;
 }
 
 .home:active,
@@ -183,7 +201,8 @@ body {
 }
 .contact {
   animation: slideIn 1.8s ease;
-}
+} 
+
 
 /*     members list    */
 table {
@@ -227,20 +246,5 @@ tr:hover {
   margin: auto;
   overflow: hidden;
 }
-.logo {
-  display: block;
-  margin: 0 auto 20px;
-  width: 100px;
-  animation: rotateIn 2s linear;
-}
-@keyframes rotateIn {
-  from {
-    transform: rotate(-360deg);
-    opacity: 0;
-  }
-  to {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-}
+
 
