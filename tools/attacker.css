@@ -1,0 +1,261 @@
+* {
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  height: max-content;
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f30b;
+  color: #000000;
+}
+
+@media screen and (min-width: 480px) {
+    #leftsidebar {width: 200px; float: left;}
+    #main {margin-left: 216px;}
+  }
+  
+  @media (max-width: 600px) {
+    .contact-btn {
+      padding: 12px 20px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .contact-btn {
+      padding: 10px 15px;
+    }
+  }
+  
+
+
+/*       header      */
+
+.name {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  font-size: 90px;
+  height: max-content;
+  color: rgb(255, 0, 0);
+  background: #e7e40e;
+  animation: colors 2s ease-in 0s infinite normal;
+}
+@keyframes colors {
+  0% {
+    background-color: aqua;
+  }
+  30% {
+    background-color: #e7e40e;
+  }
+  60% {
+    background-color: bisque;
+  }
+  80% {
+    background-color: darkorange;
+  }
+  100% {
+    background-color: deeppink;
+  }
+}
+
+.w {
+  animation: color1 1s ease-in 0s infinite normal;
+}
+.a {
+  animation: color1 1s ease-in 0.2s infinite normal;
+}
+.r {
+  animation: color1 1s ease-in 0.4s infinite normal;
+}
+.m {
+  animation: color1 1s ease-in 0.8s infinite normal;
+}
+.e {
+  animation: color1 1s ease-in 1s infinite normal;
+}
+.m1 {
+  animation: color1 1s ease-in 1.2s infinite normal;
+}
+.b {
+  animation: color1 1s ease-in 1.4s infinite normal;
+}
+.e1 {
+  animation: color1 1s ease-in 1.6s infinite normal;
+}
+.r {
+  animation: color1 1s ease-in 1.8s infinite normal;
+}
+.s {
+  animation: color1 1s ease-in 2s infinite normal;
+}
+
+@keyframes color1 {
+  0% {
+    color: black;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: black;
+  }
+}
+
+/*     menu buttons    */
+
+.container {
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+      color: #fff;
+      padding: 1rem 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  nav ul li{
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  nav ul li a::hover::after {
+    width: 100%;
+  }
+  
+  
+  .home,
+  .member,
+  .war,
+  .attacker,
+  .contact {
+    font-size: auto;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .home:hover,
+  .member:hover,
+  .war:hover,
+  .attacker:hover,
+  .contact:hover {
+    transform: scale(1.1);
+  }
+  
+  .home:active,
+  .member:active,
+  .war:active,
+  .attacker:active,
+  .contact:active {
+    transform: scale(0.9);
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .home {
+    animation: slideIn 1s ease;
+  }
+  .member {
+    animation: slideIn 1.2s ease;
+  }
+  .war {
+    animation: slideIn 1.4s ease;
+  }
+  .attacker {
+    animation: slideIn 1.6s ease;
+  }
+  .contact {
+    animation: slideIn 1.8s ease;
+  } 
+  
+
+
+/*     members list    */
+
+#war-member {
+    margin: 0%;
+    padding: 0%;
+    color: #f30bb9;
+    width: 100%;
+    background-color: #312929;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #fff;
+    animation: fadeIn 1s ease-in-out;
+  }
+  th,
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+    transition: background-color 0.3s ease;
+  }
+  th {
+    background-color: #4caf50;
+    color: white;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    
+    background-color: #a5a5a5;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .container1 {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  
+  
